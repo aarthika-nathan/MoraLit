@@ -46,6 +46,9 @@
             ),
         ));
         ?>
+
+
+
         <?php //if(isset($this->breadcrumbs)):?>
         <?php
         //$this->widget('bootstrap.widgets.TbBreadcrumbs', array(
@@ -66,44 +69,7 @@
 
         if ($route != 'default') {
             ?>
-            <div class="span3"><br/>
-                <div class="well sidebar-nav">
-                    <ul class="nav nav-list">
-
-
-                        <li <?php echo ($route == 'crew') ? 'class="active"' : '' ?>>
-                            <?php echo CHtml::link('Crew Management', array('crew/index')) ?>
-                        </li>
-
-                        <li <?php echo ($route == 'blog') ? 'class="active"' : '' ?>>
-                            <?php echo CHtml::link('Blog Management', array('blog/index')) ?>
-                        </li>
-
-                        <li <?php echo ($route == 'user') ? 'class="active"' : '' ?>>
-                            <?php echo CHtml::link('User Management', array('user/index')) ?>
-                        </li>
-
-                        <li <?php echo ($route == 'comment') ? 'class="active"' : '' ?>>
-                            <?php echo CHtml::link('Comments Management', array('comment/index')) ?>
-                        </li>
-
-                        <li <?php echo ($route == 'photo') ? 'class="active"' : '' ?>>
-                            <?php echo CHtml::link('Galary Management', array('photo/index')) ?>
-                        </li>
-
-                        <li <?php echo ($route == 'event') ? 'class="active"' : '' ?>>
-                            <?php echo CHtml::link('Event Management', array('event/index')) ?>
-                        </li>
-
-                        <li <?php echo ($route == 'subEvent') ? 'class="active"' : '' ?>>
-                            <?php echo CHtml::link('Sub-Event Management', array('subEvent/index')) ?>
-                        </li>
-
-
-
-                    </ul>
-                </div><!--/.well -->
-            </div>
+    
         <?php } else { ?>
 
             <div class="span2"></div>
