@@ -29,13 +29,9 @@
 	<?php echo CHtml::encode($data->time); ?>
 	<br />
 
-	<div rowspan="5" style="width: 100px">
-        <?php
-        $imghtml= CHtml::image("assets/blog/".$data->image);
-        echo CHtml::link($imghtml, array('view', 'id'=>$data->blog_id));
-        ?> 
-        </div>
-        <br />
+	<b><?php echo CHtml::encode($data->getAttributeLabel('image')); ?>:</b>
+	<?php echo CHtml::encode($data->image); ?>
+	<br /><br />
 
 	<?php /*
 	<b><?php echo CHtml::encode($data->getAttributeLabel('no_of_views')); ?>:</b>

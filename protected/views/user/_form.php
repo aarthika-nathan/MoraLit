@@ -17,9 +17,8 @@ $form = $this->beginWidget('bootstrap.widgets.TbActiveForm', array(
     )
         ));
 ?>
- <div class="container">
-        <div class="span2"></div>
-        <div class="span8">
+<div class="span2"></div>
+<div class="span8">
     <h3 class="master_heading">Register</h3>
     <div class="well">
         <div class="control-group">
@@ -71,4 +70,3 @@ $form = $this->beginWidget('bootstrap.widgets.TbActiveForm', array(
         <?php $this->endWidget(); ?>
     </div>
 </div><!-- form -->
- </div>
